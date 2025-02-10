@@ -1,5 +1,3 @@
-นี่คือตัวอย่างไฟล์ `README.md` สำหรับโปรเจค `golang-101`:
-
 # Golang 101
 
 This repository contains a collection of fundamental concepts and examples in Go programming language (Golang). Each file demonstrates a specific concept, ranging from basic syntax to advanced topics such as concurrency, error handling, and testing.
