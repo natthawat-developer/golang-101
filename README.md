@@ -15,13 +15,14 @@ golang-101
 ├─ 07_structs.go          # Structs and composition in Go
 ├─ 08_interfaces.go       # Interfaces in Go
 ├─ 09_pointers.go         # Pointers and memory management
-├─ 10_goroutines.go       # Goroutines for concurrency
-├─ 11_channels.go         # Channels for communication between goroutines
-├─ 12_mutex.go            # Mutex for synchronization
-├─ 13_error_handling.go   # Error handling in Go
-├─ 14_panic_recover.go    # Panic and recover mechanisms
-├─ 15_unit_test_test.go   # Unit tests in Go
-├─ 16_benchmark_test.go   # Benchmark testing in Go
+├─ 10_arrays_slices.go    # Arrays and Slices in Go
+├─ 11_goroutines.go       # Goroutines for concurrency
+├─ 12_channels.go         # Channels for communication between goroutines
+├─ 13_mutex.go            # Mutex for synchronization
+├─ 14_error_handling.go   # Error handling in Go
+├─ 15_panic_recover.go    # Panic and recover mechanisms
+├─ 16_unit_test_test.go   # Unit tests in Go
+├─ 17_benchmark_test.go   # Benchmark testing in Go
 └─ README.md              # Project documentation
 ```
 
@@ -48,25 +49,28 @@ golang-101
 7. **Pointers**  
    Discusses how pointers work in Go and how they are used to refer to memory addresses.
 
-8. **Goroutines and Concurrency**  
+8. **Arrays and Slices**  
+   Explains the differences between arrays and slices, and how to work with them in Go. Arrays have fixed sizes, while slices are more flexible and commonly used.
+
+9. **Goroutines and Concurrency**  
    Explores how to use goroutines for concurrent programming in Go.
 
-9. **Channels**  
+10. **Channels**  
    Explains how channels are used for communication between goroutines.
 
-10. **Mutex for Synchronization**  
+11. **Mutex for Synchronization**  
     Demonstrates how to use mutexes to prevent data races when multiple goroutines are accessing shared data.
 
-11. **Error Handling**  
+12. **Error Handling**  
     Covers how to handle errors properly using Go's built-in error type.
 
-12. **Panic and Recover**  
+13. **Panic and Recover**  
     Discusses how to handle panic situations and recover from errors during runtime.
 
-13. **Unit Testing**  
+14. **Unit Testing**  
     Introduces unit testing in Go, showing how to test functions with the `testing` package.
 
-14. **Benchmark Testing**  
+15. **Benchmark Testing**  
     Explains how to benchmark Go code using the `testing` package.
 
 ## How to Run the Examples
