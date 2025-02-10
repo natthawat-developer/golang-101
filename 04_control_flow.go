@@ -47,4 +47,29 @@ func main() {
     for index, value := range nums {
         fmt.Println("Index:", index, "Value:", value)
     }
+
+    // 6. การใช้ goto
+    fmt.Println("\nการใช้ goto")
+    num2 := 5
+    if num2 > 0 {
+        fmt.Println("num2 เป็นค่าบวก")
+        goto skipMessage
+    }
+    fmt.Println("ข้อความนี้จะไม่แสดง")
+skipMessage:
+    fmt.Println("โปรแกรมข้ามไปที่นี่")
+
+    // 7. การใช้ defer, panic, และ recover
+    fmt.Println("\nการใช้ defer, panic, และ recover")
+    defer fmt.Println("สิ้นสุดการทำงานฟังก์ชัน") // defer ใช้สำหรับเลื่อนการทำงานไปจนกว่าฟังก์ชันจะสิ้นสุด
+
+    // ใช้ panic เพื่อทำให้โปรแกรมหยุดทำงาน
+    fmt.Println("โปรแกรมเริ่มทำงาน")
+    defer func() {
+        if r := recover(); r != nil {
+            fmt.Println("เกิดข้อผิดพลาด:", r)
+        }
+    }() // ใช้ recover เพื่อจับข้อผิดพลาดจาก panic
+    panic("เกิดข้อผิดพลาดในโปรแกรม")
+    fmt.Println("ข้อความนี้จะไม่ถูกแสดง")
 }
